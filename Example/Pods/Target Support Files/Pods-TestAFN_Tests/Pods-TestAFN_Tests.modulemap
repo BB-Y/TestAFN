@@ -1,0 +1,6 @@
+framework module Pods_TestAFN_Tests {
+  umbrella header "Pods-TestAFN_Tests-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -1,0 +1,6 @@
+framework module TestAFN {
+  umbrella header "TestAFN-umbrella.h"
+
+  export *
+  module * { export * }
+}
