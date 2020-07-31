@@ -39,8 +39,8 @@
 /* Begin PBXFileReference section */
 		196F45DF63C30E3CBD30A265 /* Pods-TestAFN_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestAFN_Example.debug.xcconfig"; path = "Target Support Files/Pods-TestAFN_Example/Pods-TestAFN_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		197F79DC73383BE57DB45A1E /* Pods-TestAFN_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestAFN_Tests.release.xcconfig"; path = "Target Support Files/Pods-TestAFN_Tests/Pods-TestAFN_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		1CB98E2DE92FA9B816961ADC /* TestAFN.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = TestAFN.podspec; path = ../TestAFN.podspec; sourceTree = "<group>"; };
-		4403AE278E3C3AB02E643C00 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		1CB98E2DE92FA9B816961ADC /* TestAFN.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = TestAFN.podspec; path = ../TestAFN.podspec; sourceTree = "<group>"; };
+		4403AE278E3C3AB02E643C00 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		4F383B98CE97E6C5AD81CDF3 /* Pods_TestAFN_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TestAFN_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F58A195388D20070C39A /* TestAFN_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestAFN_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F58D195388D20070C39A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -65,7 +65,7 @@
 		71719F9E1E33DC2100824A3D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		829C08E94F5D9A11B90D4A2C /* Pods-TestAFN_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestAFN_Tests.debug.xcconfig"; path = "Target Support Files/Pods-TestAFN_Tests/Pods-TestAFN_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		A104B7775BFBBF17FC6EDDEF /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		A104B7775BFBBF17FC6EDDEF /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		BB58DE15ADF1E47F1449AC38 /* Pods_TestAFN_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TestAFN_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -103,7 +103,6 @@
 				829C08E94F5D9A11B90D4A2C /* Pods-TestAFN_Tests.debug.xcconfig */,
 				197F79DC73383BE57DB45A1E /* Pods-TestAFN_Tests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -258,6 +257,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -324,11 +324,11 @@
 			);
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-TestAFN_Example/Pods-TestAFN_Example-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/TestAFN/TestAFN.framework",
+				"${BUILT_PRODUCTS_DIR}/AFNetworking/AFNetworking.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/TestAFN.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AFNetworking.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -498,7 +498,7 @@
 				GCC_PREFIX_HEADER = "TestAFN/TestAFN-Prefix.pch";
 				INFOPLIST_FILE = "TestAFN/TestAFN-Info.plist";
 				MODULE_NAME = ExampleApp;
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_BUNDLE_IDENTIFIER = com.hzx;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				WRAPPER_EXTENSION = app;
@@ -514,7 +514,7 @@
 				GCC_PREFIX_HEADER = "TestAFN/TestAFN-Prefix.pch";
 				INFOPLIST_FILE = "TestAFN/TestAFN-Info.plist";
 				MODULE_NAME = ExampleApp;
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_BUNDLE_IDENTIFIER = com.hzx;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				WRAPPER_EXTENSION = app;

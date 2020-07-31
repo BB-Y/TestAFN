@@ -1,15 +1,42 @@
 PODS:
-  - TestAFN (0.1.0)
+  - AFNetworking (2.7.0):
+    - AFNetworking/NSURLConnection (= 2.7.0)
+    - AFNetworking/NSURLSession (= 2.7.0)
+    - AFNetworking/Reachability (= 2.7.0)
+    - AFNetworking/Security (= 2.7.0)
+    - AFNetworking/Serialization (= 2.7.0)
+    - AFNetworking/UIKit (= 2.7.0)
+  - AFNetworking/NSURLConnection (2.7.0):
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+  - AFNetworking/NSURLSession (2.7.0):
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+  - AFNetworking/Reachability (2.7.0)
+  - AFNetworking/Security (2.7.0)
+  - AFNetworking/Serialization (2.7.0)
+  - AFNetworking/UIKit (2.7.0):
+    - AFNetworking/NSURLConnection
+    - AFNetworking/NSURLSession
+  - TestAFN (0.1.0):
+    - AFNetworking (~> 2.3)
 
 DEPENDENCIES:
   - TestAFN (from `../`)
+
+SPEC REPOS:
+  trunk:
+    - AFNetworking
 
 EXTERNAL SOURCES:
   TestAFN:
     :path: "../"
 
 SPEC CHECKSUMS:
-  TestAFN: 7e2719e8acd0c868e9491f61c37ada215e527479
+  AFNetworking: 8dd5f9b9691e09186393069a12cc3b5ed7c8b511
+  TestAFN: 88f8634448d619b1d85852dc036aae439c656004
 
 PODFILE CHECKSUM: 8de85a6043b494f0d8e2678537e8418175abc5c6
 

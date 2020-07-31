@@ -8,6 +8,7 @@
 
 #import "BYViewController.h"
 
+
 @interface BYViewController ()
 
 @end
@@ -17,6 +18,8 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    //Test *a = [Test new];
+    
 	// Do any additional setup after loading the view, typically from a nib.
 }
 

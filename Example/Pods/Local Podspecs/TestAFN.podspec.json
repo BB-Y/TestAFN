@@ -1,9 +1,9 @@
 {
   "name": "TestAFN",
   "version": "0.1.0",
-  "summary": "A short description of TestAFN.",
-  "description": "TODO: Add long description of the pod here.",
-  "homepage": "https://github.com/huang/TestAFN",
+  "summary": "TestAFN",
+  "description": "TestAFN.",
+  "homepage": "https://github.com/BB-Y/TestAFN",
   "license": {
     "type": "MIT",
     "file": "LICENSE"
@@ -12,11 +12,16 @@
     "huang": "356071707@qq.com"
   },
   "source": {
-    "git": "https://github.com/huang/TestAFN.git",
+    "git": "https://github.com/BB-Y/TestAFN.git",
     "tag": "0.1.0"
   },
   "platforms": {
     "ios": "8.0"
   },
-  "source_files": "TestAFN/Classes/**/*"
+  "source_files": "TestAFN/Classes/**/*",
+  "dependencies": {
+    "AFNetworking": [
+      "~> 2.3"
+    ]
+  }
 }
